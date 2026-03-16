@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harikrishnan's Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h1, h3 {
+      margin: 0.5em 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    /* Centered Text */
+    .center {
+      text-align: center;
+    }
+
+    /* Heading Styles */
+    .main-title {
+      color: #FF007F;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    .sub-title {
+      color: #007FFF;
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+
+    .devops-philosophy,
+    .why-choose,
+    .toolkit-title,
+    .github-stats,
+    .buzzwords {
+      margin-top: 20px;
+    }
+
+    /* Badge Styling */
+    .badge {
+      margin: 0.5em;
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    /* Badge Colors */
+    .badge-devops { background-color: #FF007F; color: white; }
+    .badge-aws { background-color: #FF007F; color: white; }
+    .badge-azure { background-color: #007FFF; color: white; }
+    .badge-terraform { background-color: #FF007F; color: white; }
+    .badge-kubernetes { background-color: #007FFF; color: white; }
+
+    /* Card-style for sections */
+    .section-card {
+      padding: 20px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-card h3 {
+      color: #333;
+    }
+
+    /* DevOps Toolkit Icons */
+    .toolkit-icons img {
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    /* Stats & Buzzwords */
+    .stats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .stats img {
+      margin: 0 5px;
+      border-radius: 8px;
+    }
+
+    .tech-buzzwords {
+      font-size: 18px;
+    }
+
+    .tech-buzzwords span {
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    /* List Styles */
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Footer and Quotes */
+    .quote {
+      font-style: italic;
+      color: #FF00FF;
+    }
+
+    .quote-alt {
+      font-style: italic;
+      color: #00FFFF;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .stats {
+        flex-direction: column;
+      }
+
+      .toolkit-icons img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="center">
+    <h1 class="main-title">Hi 👋, I'm Harikrishnan</h1>
+    <h3 class="sub-title">A passionate DevOps Engineer from India ☁️</h3>
+  </div>
+
+  <!-- Badges Section -->
+  <div class="center">
+    <a href="https://github.com/harykryshnan-master">
+      <span class="badge badge-devops">DevOps Engineer 🛠️</span>
+      <span class="badge badge-aws">AWS Certified 🤩</span>
+      <span class="badge badge-azure">Azure Certified 🔥</span>
+      <span class="badge badge-terraform">Terraform Certified 🚀</span>
+      <span class="badge badge-kubernetes">Kubernetes Master 🔥</span>
+    </a>
+  </div>
+
+  <!-- Introduction Section -->
+  <div class="section-card center">
+    <p style="font-size: 20px;">🚀 Eager to learn new tools and technologies! 💡 <br>
+      Experienced DevOps Engineer passionate about building scalable, reliable, and efficient cloud-based systems. 💪 
+    </p>
+  </div>
+
+  <!-- DevOps Philosophy Section -->
+  <div class="section-card">
+    <h3 class="devops-philosophy">🌈 DevOps Philosophy:</h3>
+    <p style="color: #00CED1;">
+      - "Infrastructure as Code is not a tool—it's a mindset." <br>
+      - "Cloud is limitless, so is my curiosity." <br>
+      - "Automate everything, except coffee brewing ☕." <br>
+      - "Monitor, Iterate, Innovate! 🚀"
+    </p>
+  </div>
+
+  <!-- Why Choose Me Section -->
+  <div class="section-card">
+    <h3 class="why-choose" style="color: #FFA500;">✨ Why Choose Me?</h3>
+    <ul style="color: #7CFC00;">
+      <li>🏆 Certified in AWS, Azure, Terraform, and Kubernetes</li>
+      <li>⚡ Known for optimizing cloud costs without compromising performance</li>
+      <li>💡 Creator of reusable DevOps workflows for various teams</li>
+      <li>🎓 Mentor for aspiring DevOps engineers in community workshops</li>
+    </ul>
+  </div>
+
+  <!-- My DevOps Toolkit Section -->
+  <div class="section-card">
+    <h3 class="toolkit-title center" style="color: #FF4500;">☁️ My DevOps Toolkit ☁️</h3>
+    <div class="toolkit-icons center">
+      <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" width="50" height="50" />
+      <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" width="50" height="50" />
+      <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="Terraform" width="50" height="50" />
+      <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker" width="50" height="50" />
+      <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" width="50" height="50" />
+      <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="50" height="50" />
+      <img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg" alt="Prometheus" width="50" height="50" />
+      <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="Grafana" width="50" height="50" />
+    </div>
+  </div>
+
+  <!-- GitHub Stats Section -->
+  <div class="center">
+    <h3 class="github-stats" style="color: #FF6347;">🔥 GitHub Stats:</h3>
+    <img src="https://github-readme-stats.vercel.app/api?username=harykryshnan-master&show_icons=true&theme=radical" alt="Harikrishnan's GitHub stats" />
+  </div>
+
+  <!-- Buzzwords Section -->
+  <div class="center buzzwords">
+    <h3 style="color: #32CD32;">🚀 Tech Buzzwords:</h3>
+    <p class="tech-buzzwords">
+      <span style="background-color: #FF4500; color: white;">Microservices</span> | 
+      <span style="background-color: #1E90FF; color: white;">Serverless</span> | 
+      <span style="background-color: #FFD700; color: white;">GitOps</span> | 
+      <span style="background-color: #FF1493; color: white;">Observability</span> | 
+      <span style="background-color: #8A2BE2; color: white;">Immutable Infrastructure</span> | 
+      <span style="background-color: #228B22; color: white;">Self-Healing Systems</span>
+    </p>
+  </div>
+
+  <!-- Cloud Journey Section -->
+  <div class="section-card">
+    <h3 style="color: #1E90FF;">📅 Cloud Journey:</h3>
+    <ul style="list-style-type: none; color: #FF69B4;">
+      <li>🚀 <strong>2018:</strong> Started exploring AWS and earned my first certification.</li>
+      <li>🛠️ <strong>2019:</strong> Built my first Kubernetes cluster for a client project.</li>
+      <li>🌩️ <strong>2020:</strong> Achieved Azure certification and migrated legacy apps to Azure Cloud.</li>
+      <li>🌟 <strong>2021:</strong> Created a multi-cloud CI/CD pipeline using Terraform and Jenkins.</li>
+      <li>🔥 <strong>2022:</strong> Recognized as a DevOps advocate and speaker in community events.</li>
+    </ul>
+  </div>
+
+  <!-- Closing Section -->
+  <div class="center">
+    <h3 style="color: #007FFF;">Let’s connect and collaborate! 🤝</h3>
+    <p style="font-size: 20px; color: #FF4500;">
+      🏗️ Cloud Builder | 🎨 Infrastructure Artist | 🐳 Container Magician | 🚀 Scaling Enthusiast
+    </p>
+  </div>
+
+  <div class="center">
+    <p>[Alwayz podra danceuh 🕺💃](https://github.com/user-attachments/assets/e3b7df6f-18e2-4097-9a91-a845ca5cfb33)</p>
+  </div>
+
+</body>
+</html>
