@@ -4,160 +4,204 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harikrishnan's Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+
   <style>
     /* Global Styles */
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #1F1F1F;  /* Deep gray background */
-      color: #E4E4E4;  /* Light text for better readability */
+      font-family: 'Roboto', sans-serif;
+      background-color: #212121;
+      color: #ECEFF1;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
-    /* Center Text */
     .center {
       text-align: center;
     }
 
     /* Heading Styles */
     .main-title {
-      color: #5C6BC0;  /* Muted Blue */
-      font-size: 3em;
+      font-family: 'Ubuntu', sans-serif;
+      color: #FF4081;
+      font-size: 4em;
       font-weight: 700;
       margin: 20px 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     .sub-title {
-      color: #90A4AE;  /* Soft gray-blue */
-      font-size: 1.6em;
+      color: #B0BEC5;
+      font-size: 1.8em;
       font-weight: 500;
       margin-bottom: 30px;
+      font-style: italic;
     }
 
     /* Badge Styling */
     .badge {
       margin: 0.5em;
       padding: 8px 20px;
-      font-size: 14px;
+      font-size: 16px;
       border-radius: 25px;
       display: inline-block;
       text-decoration: none;
       color: #fff;
-      transition: background-color 0.3s;
+      background-color: #FF4081;
+      transition: background-color 0.3s, transform 0.3s;
     }
 
-    /* Badge Colors */
-    .badge-devops { background-color: #5C6BC0; }
-    .badge-aws { background-color: #FF5722; }
-    .badge-azure { background-color: #2979FF; }
-    .badge-terraform { background-color: #388E3C; }
-    .badge-kubernetes { background-color: #0288D1; }
-
     .badge:hover {
-      background-color: #212121;  /* Darker shade on hover */
+      background-color: #D500F9;
+      transform: scale(1.1);
     }
 
     /* Button Styling */
     .button {
-      background-color: #3F51B5;  /* Main color */
+      background-color: #FF4081;
       color: #fff;
-      padding: 12px 30px;
+      padding: 14px 40px;
       border-radius: 50px;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 18px;
       display: inline-block;
       margin-top: 30px;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     }
 
     .button:hover {
-      background-color: #303F9F;  /* Darker blue */
-      transform: translateY(-4px);  /* Slight lift effect */
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+      background-color: #D500F9;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
 
-    /* Section Card */
+    .button:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: ripple 0.6s ease-out;
+    }
+
+    @keyframes ripple {
+      0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      100% {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+      }
+    }
+
+    /* Section Cards */
     .section-card {
       background-color: #263238;
-      padding: 30px;
-      border-radius: 10px;
-      margin: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      margin: 30px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     .section-card h3 {
       color: #BBDEFB;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
 
     .section-card p, .section-card ul {
-      color: #E4E4E4;
+      color: #ECEFF1;
+      font-size: 1.1em;
     }
 
-    /* DevOps Toolkit Icons */
+    /* Tech Icons */
     .toolkit-icons img {
       margin: 15px;
-      transition: transform 0.3s ease;
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
     }
 
     .toolkit-icons img:hover {
-      transform: scale(1.1);  /* Slight zoom effect on icons */
+      transform: scale(1.2);
     }
 
     /* Tech Buzzwords */
     .tech-buzzwords {
-      font-size: 18px;
-      margin: 20px 0;
+      font-size: 1.2em;
+      margin: 30px 0;
+      color: #FF4081;
     }
 
     .tech-buzzwords span {
       padding: 8px 16px;
-      background-color: #5C6BC0;
-      color: #fff;
-      border-radius: 25px;
-      font-weight: bold;
-      margin: 5px;
+      background-color: #263238;
+      color: #ECEFF1;
+      border-radius: 30px;
+      font-weight: 600;
+      margin: 8px;
       display: inline-block;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s, transform 0.3s;
     }
 
     .tech-buzzwords span:hover {
-      background-color: #3949AB;  /* Hover effect for buzzwords */
-      transform: translateY(-2px);
+      background-color: #FF4081;
+      transform: translateY(-3px);
     }
 
     /* List Styles */
     ul {
-      padding-left: 20px;
+      padding-left: 30px;
     }
 
-    /* Footer and Quotes */
+    /* Footer & Quotes */
     .quote, .quote-alt {
       font-style: italic;
-      color: #BBDEFB;
-    }
-
-    .quote-alt {
-      color: #90A4AE;
+      font-size: 1.1em;
+      color: #B0BEC5;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .stats {
-        flex-direction: column;
+      .main-title {
+        font-size: 2.5em;
+      }
+
+      .sub-title {
+        font-size: 1.5em;
       }
 
       .toolkit-icons img {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
       }
 
       .button {
-        width: 80%;
-        padding: 12px 20px;
+        padding: 12px 30px;
       }
     }
+
   </style>
 </head>
 <body>
@@ -170,11 +214,11 @@
 
   <!-- Badges Section -->
   <div class="center">
-    <a href="https://github.com/harykryshnan-master" class="badge badge-devops">DevOps Engineer 🛠️</a>
-    <a href="https://www.aws.amazon.com/certification/" class="badge badge-aws">AWS Certified 🤩</a>
-    <a href="https://learn.microsoft.com/en-us/certifications/" class="badge badge-azure">Azure Certified 🔥</a>
-    <a href="https://www.terraform.io/certification" class="badge badge-terraform">Terraform Certified 🚀</a>
-    <a href="https://www.cncf.io/certification/kubernetes/" class="badge badge-kubernetes">Kubernetes Master 🔥</a>
+    <a href="https://github.com/harykryshnan-master" class="badge">DevOps Engineer 🛠️</a>
+    <a href="https://www.aws.amazon.com/certification/" class="badge">AWS Certified 🤩</a>
+    <a href="https://learn.microsoft.com/en-us/certifications/" class="badge">Azure Certified 🔥</a>
+    <a href="https://www.terraform.io/certification" class="badge">Terraform Certified 🚀</a>
+    <a href="https://www.cncf.io/certification/kubernetes/" class="badge">Kubernetes Master 🔥</a>
   </div>
 
   <!-- Introduction Section -->
@@ -210,11 +254,11 @@
   <div class="section-card">
     <h3 class="center">☁️ My DevOps Toolkit ☁️</h3>
     <div class="toolkit-icons center">
-      <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" width="50" height="50" />
-      <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" width="50" height="50" />
-      <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="Terraform" width="50" height="50" />
-      <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker" width="50" height="50" />
-      <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" width="50" height="50" />
+      <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" />
+      <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" />
+      <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="Terraform" />
+      <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker" />
+      <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" />
     </div>
   </div>
 
@@ -241,14 +285,14 @@
 
   <!-- Favorite Quote Section -->
   <div class="center">
-    <h3 style="color: #BBDEFB;">💡 Favorite Quote:</h3>
+    <h3 style="color: #FF4081;">💡 Favorite Quote:</h3>
     <p class="quote">"The best way to predict the future is to invent it." – Alan Kay 💫</p>
   </div>
 
   <!-- Closing Section -->
   <div class="center">
-    <h3 style="color: #BBDEFB;">Let’s connect and collaborate! 🤝</h3>
-    <p style="font-size: 20px; color: #E4E4E4;">
+    <h3 style="color: #FF4081;">Let’s connect and collaborate! 🤝</h3>
+    <p style="font-size: 20px; color: #ECEFF1;">
       🏗️ Cloud Builder | 🎨 Infrastructure Artist | 🐳 Container Magician | 🚀 Scaling Enthusiast
     </p>
   </div>
