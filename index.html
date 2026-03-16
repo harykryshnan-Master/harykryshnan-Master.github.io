@@ -8,120 +8,123 @@
     /* Global Styles */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #2E2E2E;  /* Dark gray background */
-      color: #D1D1D1;  /* Lighter text for better readability */
+      background-color: #1F1F1F;  /* Deep gray background */
+      color: #E4E4E4;  /* Light text for better readability */
       margin: 0;
       padding: 0;
-    }
-
-    h1, h3 {
-      margin: 0.5em 0;
-    }
-
-    p {
       line-height: 1.6;
     }
 
-    /* Centered Text */
+    /* Center Text */
     .center {
       text-align: center;
     }
 
     /* Heading Styles */
     .main-title {
-      color: #5E6A8B;  /* Muted blue-gray */
-      font-size: 2.5em;
-      font-weight: bold;
+      color: #5C6BC0;  /* Muted Blue */
+      font-size: 3em;
+      font-weight: 700;
+      margin: 20px 0;
     }
 
     .sub-title {
-      color: #A6B1C3;  /* Soft light gray-blue */
-      font-size: 1.5em;
-      font-weight: 600;
-    }
-
-    .devops-philosophy,
-    .why-choose,
-    .toolkit-title,
-    .github-stats,
-    .buzzwords {
-      margin-top: 20px;
+      color: #90A4AE;  /* Soft gray-blue */
+      font-size: 1.6em;
+      font-weight: 500;
+      margin-bottom: 30px;
     }
 
     /* Badge Styling */
     .badge {
       margin: 0.5em;
-      border-radius: 10px;
-      padding: 8px 16px;
-      font-size: 16px;
+      padding: 8px 20px;
+      font-size: 14px;
+      border-radius: 25px;
       display: inline-block;
       text-decoration: none;
+      color: #fff;
+      transition: background-color 0.3s;
     }
 
     /* Badge Colors */
-    .badge-devops { background-color: #5E6A8B; color: white; }
-    .badge-aws { background-color: #5E6A8B; color: white; }
-    .badge-azure { background-color: #3B4C56; color: white; }
-    .badge-terraform { background-color: #5E6A8B; color: white; }
-    .badge-kubernetes { background-color: #3B4C56; color: white; }
+    .badge-devops { background-color: #5C6BC0; }
+    .badge-aws { background-color: #FF5722; }
+    .badge-azure { background-color: #2979FF; }
+    .badge-terraform { background-color: #388E3C; }
+    .badge-kubernetes { background-color: #0288D1; }
 
-    /* Card-style for sections */
-    .section-card {
-      padding: 20px;
-      margin: 20px;
-      background-color: #444; /* Slightly lighter background for cards */
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .section-card h3 {
-      color: #D1D1D1;
+    .badge:hover {
+      background-color: #212121;  /* Darker shade on hover */
     }
 
     /* Button Styling */
     .button {
-      background-color: #5E6A8B; /* Muted blue */
-      color: #FFFFFF;
+      background-color: #3F51B5;  /* Main color */
+      color: #fff;
       padding: 12px 30px;
-      border-radius: 5px;
-      font-size: 16px;
+      border-radius: 50px;
       text-decoration: none;
+      font-size: 16px;
       display: inline-block;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
+      margin-top: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     }
 
     .button:hover {
-      background-color: #4B5677;  /* Darker shade of blue-gray */
+      background-color: #303F9F;  /* Darker blue */
+      transform: translateY(-4px);  /* Slight lift effect */
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Section Card */
+    .section-card {
+      background-color: #263238;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-card h3 {
+      color: #BBDEFB;
+    }
+
+    .section-card p, .section-card ul {
+      color: #E4E4E4;
     }
 
     /* DevOps Toolkit Icons */
     .toolkit-icons img {
-      margin: 10px;
-      border-radius: 8px;
+      margin: 15px;
+      transition: transform 0.3s ease;
     }
 
-    /* Stats & Buzzwords */
-    .stats {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .toolkit-icons img:hover {
+      transform: scale(1.1);  /* Slight zoom effect on icons */
+    }
+
+    /* Tech Buzzwords */
+    .tech-buzzwords {
+      font-size: 18px;
       margin: 20px 0;
     }
 
-    .stats img {
-      margin: 0 5px;
-      border-radius: 8px;
-    }
-
-    .tech-buzzwords {
-      font-size: 18px;
-    }
-
     .tech-buzzwords span {
-      padding: 6px 12px;
-      border-radius: 20px;
+      padding: 8px 16px;
+      background-color: #5C6BC0;
+      color: #fff;
+      border-radius: 25px;
       font-weight: bold;
+      margin: 5px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .tech-buzzwords span:hover {
+      background-color: #3949AB;  /* Hover effect for buzzwords */
+      transform: translateY(-2px);
     }
 
     /* List Styles */
@@ -130,26 +133,13 @@
     }
 
     /* Footer and Quotes */
-    .quote {
+    .quote, .quote-alt {
       font-style: italic;
-      color: #A6B1C3;
+      color: #BBDEFB;
     }
 
     .quote-alt {
-      font-style: italic;
-      color: #B5C3D1;
-    }
-
-    /* Link Styling */
-    .link {
-      color: #FFD700;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .link:hover {
-      text-decoration: underline;
-      color: #FF6347; /* Hover color */
+      color: #90A4AE;
     }
 
     /* Responsive Design */
@@ -159,8 +149,13 @@
       }
 
       .toolkit-icons img {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
+      }
+
+      .button {
+        width: 80%;
+        padding: 12px 20px;
       }
     }
   </style>
@@ -175,26 +170,24 @@
 
   <!-- Badges Section -->
   <div class="center">
-    <a href="https://github.com/harykryshnan-master">
-      <span class="badge badge-devops">DevOps Engineer 🛠️</span>
-      <span class="badge badge-aws">AWS Certified 🤩</span>
-      <span class="badge badge-azure">Azure Certified 🔥</span>
-      <span class="badge badge-terraform">Terraform Certified 🚀</span>
-      <span class="badge badge-kubernetes">Kubernetes Master 🔥</span>
-    </a>
+    <a href="https://github.com/harykryshnan-master" class="badge badge-devops">DevOps Engineer 🛠️</a>
+    <a href="https://www.aws.amazon.com/certification/" class="badge badge-aws">AWS Certified 🤩</a>
+    <a href="https://learn.microsoft.com/en-us/certifications/" class="badge badge-azure">Azure Certified 🔥</a>
+    <a href="https://www.terraform.io/certification" class="badge badge-terraform">Terraform Certified 🚀</a>
+    <a href="https://www.cncf.io/certification/kubernetes/" class="badge badge-kubernetes">Kubernetes Master 🔥</a>
   </div>
 
   <!-- Introduction Section -->
   <div class="section-card center">
     <p style="font-size: 20px;">🚀 Eager to learn new tools and technologies! 💡 <br>
-      Experienced DevOps Engineer passionate about building scalable, reliable, and efficient cloud-based systems. 💪 
+      Experienced DevOps Engineer passionate about building scalable, reliable, and efficient cloud-based systems. 💪
     </p>
   </div>
 
   <!-- DevOps Philosophy Section -->
   <div class="section-card">
-    <h3 class="devops-philosophy">🌈 DevOps Philosophy:</h3>
-    <p style="color: #A6B1C3;">
+    <h3>🌈 DevOps Philosophy:</h3>
+    <p>
       - "Infrastructure as Code is not a tool—it's a mindset." <br>
       - "Cloud is limitless, so is my curiosity." <br>
       - "Automate everything, except coffee brewing ☕." <br>
@@ -204,8 +197,8 @@
 
   <!-- Why Choose Me Section -->
   <div class="section-card">
-    <h3 class="why-choose" style="color: #FFA500;">✨ Why Choose Me?</h3>
-    <ul style="color: #A6B1C3;">
+    <h3>✨ Why Choose Me?</h3>
+    <ul>
       <li>🏆 Certified in AWS, Azure, Terraform, and Kubernetes</li>
       <li>⚡ Known for optimizing cloud costs without compromising performance</li>
       <li>💡 Creator of reusable DevOps workflows for various teams</li>
@@ -215,61 +208,49 @@
 
   <!-- My DevOps Toolkit Section -->
   <div class="section-card">
-    <h3 class="toolkit-title center" style="color: #5E6A8B;">☁️ My DevOps Toolkit ☁️</h3>
+    <h3 class="center">☁️ My DevOps Toolkit ☁️</h3>
     <div class="toolkit-icons center">
       <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" width="50" height="50" />
       <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" width="50" height="50" />
       <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="Terraform" width="50" height="50" />
       <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker" width="50" height="50" />
       <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" width="50" height="50" />
-      <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="50" height="50" />
-      <img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg" alt="Prometheus" width="50" height="50" />
-      <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="Grafana" width="50" height="50" />
     </div>
   </div>
 
-  <!-- GitHub Stats Section -->
-  <div class="center">
-    <h3 class="github-stats" style="color: #FF6347;">🔥 GitHub Stats:</h3>
-    <img src="https://github-readme-stats.vercel.app/api?username=harykryshnan-master&show_icons=true&theme=radical" alt="Harikrishnan's GitHub stats" />
-  </div>
-
-  <!-- Buzzwords Section -->
-  <div class="center buzzwords">
-    <h3 style="color: #A6B1C3;">🚀 Tech Buzzwords:</h3>
-    <p class="tech-buzzwords">
-      <span style="background-color: #5E6A8B; color: white;">Microservices</span> | 
-      <span style="background-color: #3B4C56; color: white;">Serverless</span> | 
-      <span style="background-color: #5E6A8B; color: white;">GitOps</span> | 
-      <span style="background-color: #4B5677; color: white;">Observability</span> | 
-      <span style="background-color: #3B4C56; color: white;">Immutable Infrastructure</span> | 
-      <span style="background-color: #5E6A8B; color: white;">Self-Healing Systems</span>
-    </p>
-  </div>
-
-  <!-- Cloud Journey Section -->
-  <div class="section-card">
-    <h3 style="color: #5E6A8B;">📅 Cloud Journey:</h3>
-    <ul style="list-style-type: none; color: #A6B1C3;">
-      <li>🚀 <strong>2018:</strong> Started exploring AWS and earned my first certification.</li>
-      <li>🛠️ <strong>2019:</strong> Built my first Kubernetes cluster for a client project.</li>
-      <li>🌩️ <strong>2020:</strong> Achieved Azure certification and migrated legacy apps to Azure Cloud.</li>
-      <li>🌟 <strong>2021:</strong> Created a multi-cloud CI/CD pipeline using Terraform and Jenkins.</li>
-      <li>🔥 <strong>2022:</strong> Recognized as a DevOps advocate and speaker in community events.</li>
-    </ul>
-  </div>
-
-  <!-- Closing Section -->
-  <div class="center">
-    <h3 style="color: #5E6A8B;">Let’s connect and collaborate! 🤝</h3>
-    <p style="font-size: 20px; color: #D1D1D1;">
-      🏗️ Cloud Builder | 🎨 Infrastructure Artist | 🐳 Container Magician | 🚀 Scaling Enthusiast
-    </p>
+  <!-- Tech Buzzwords Section -->
+  <div class="center tech-buzzwords">
+    <span>Microservices</span>
+    <span>Serverless</span>
+    <span>GitOps</span>
+    <span>Observability</span>
+    <span>Immutable Infrastructure</span>
+    <span>Self-Healing Systems</span>
   </div>
 
   <!-- Button to Open Link in a New Tab -->
   <div class="center">
     <a href="https://github.com/user-attachments/assets/e3b7df6f-18e2-4097-9a91-a845ca5cfb33" target="_blank" class="button">Check out the Dance Video 🕺💃</a>
+  </div>
+
+  <!-- Inspirational Quotes Section -->
+  <div class="center">
+    <p class="quote">“You build it, you run it.” – Werner Vogels, CTO of Amazon 💡</p>
+    <p class="quote-alt">“If you automate a mess, you get an automated mess.” – Rod Michael 🚀</p>
+  </div>
+
+  <!-- Favorite Quote Section -->
+  <div class="center">
+    <h3 style="color: #BBDEFB;">💡 Favorite Quote:</h3>
+    <p class="quote">"The best way to predict the future is to invent it." – Alan Kay 💫</p>
+  </div>
+
+  <!-- Closing Section -->
+  <div class="center">
+    <h3 style="color: #BBDEFB;">Let’s connect and collaborate! 🤝</h3>
+    <p style="font-size: 20px; color: #E4E4E4;">
+      🏗️ Cloud Builder | 🎨 Infrastructure Artist | 🐳 Container Magician | 🚀 Scaling Enthusiast
+    </p>
   </div>
 
 </body>
