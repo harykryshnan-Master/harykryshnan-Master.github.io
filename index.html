@@ -8,8 +8,8 @@
     /* Global Styles */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #333;  /* Dark background */
-      color: #f1f1f1;  /* Light text */
+      background-color: #2E2E2E;  /* Dark gray background */
+      color: #D1D1D1;  /* Lighter text for better readability */
       margin: 0;
       padding: 0;
     }
@@ -29,13 +29,13 @@
 
     /* Heading Styles */
     .main-title {
-      color: #FF007F;
+      color: #5E6A8B;  /* Muted blue-gray */
       font-size: 2.5em;
       font-weight: bold;
     }
 
     .sub-title {
-      color: #007FFF;
+      color: #A6B1C3;  /* Soft light gray-blue */
       font-size: 1.5em;
       font-weight: 600;
     }
@@ -59,11 +59,11 @@
     }
 
     /* Badge Colors */
-    .badge-devops { background-color: #FF007F; color: white; }
-    .badge-aws { background-color: #FF007F; color: white; }
-    .badge-azure { background-color: #007FFF; color: white; }
-    .badge-terraform { background-color: #FF007F; color: white; }
-    .badge-kubernetes { background-color: #007FFF; color: white; }
+    .badge-devops { background-color: #5E6A8B; color: white; }
+    .badge-aws { background-color: #5E6A8B; color: white; }
+    .badge-azure { background-color: #3B4C56; color: white; }
+    .badge-terraform { background-color: #5E6A8B; color: white; }
+    .badge-kubernetes { background-color: #3B4C56; color: white; }
 
     /* Card-style for sections */
     .section-card {
@@ -75,7 +75,24 @@
     }
 
     .section-card h3 {
-      color: #f1f1f1;
+      color: #D1D1D1;
+    }
+
+    /* Button Styling */
+    .button {
+      background-color: #5E6A8B; /* Muted blue */
+      color: #FFFFFF;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #4B5677;  /* Darker shade of blue-gray */
     }
 
     /* DevOps Toolkit Icons */
@@ -115,12 +132,12 @@
     /* Footer and Quotes */
     .quote {
       font-style: italic;
-      color: #FF00FF;
+      color: #A6B1C3;
     }
 
     .quote-alt {
       font-style: italic;
-      color: #00FFFF;
+      color: #B5C3D1;
     }
 
     /* Link Styling */
@@ -177,7 +194,7 @@
   <!-- DevOps Philosophy Section -->
   <div class="section-card">
     <h3 class="devops-philosophy">🌈 DevOps Philosophy:</h3>
-    <p style="color: #00CED1;">
+    <p style="color: #A6B1C3;">
       - "Infrastructure as Code is not a tool—it's a mindset." <br>
       - "Cloud is limitless, so is my curiosity." <br>
       - "Automate everything, except coffee brewing ☕." <br>
@@ -188,7 +205,7 @@
   <!-- Why Choose Me Section -->
   <div class="section-card">
     <h3 class="why-choose" style="color: #FFA500;">✨ Why Choose Me?</h3>
-    <ul style="color: #7CFC00;">
+    <ul style="color: #A6B1C3;">
       <li>🏆 Certified in AWS, Azure, Terraform, and Kubernetes</li>
       <li>⚡ Known for optimizing cloud costs without compromising performance</li>
       <li>💡 Creator of reusable DevOps workflows for various teams</li>
@@ -198,7 +215,7 @@
 
   <!-- My DevOps Toolkit Section -->
   <div class="section-card">
-    <h3 class="toolkit-title center" style="color: #FF4500;">☁️ My DevOps Toolkit ☁️</h3>
+    <h3 class="toolkit-title center" style="color: #5E6A8B;">☁️ My DevOps Toolkit ☁️</h3>
     <div class="toolkit-icons center">
       <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" width="50" height="50" />
       <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" width="50" height="50" />
@@ -219,21 +236,21 @@
 
   <!-- Buzzwords Section -->
   <div class="center buzzwords">
-    <h3 style="color: #32CD32;">🚀 Tech Buzzwords:</h3>
+    <h3 style="color: #A6B1C3;">🚀 Tech Buzzwords:</h3>
     <p class="tech-buzzwords">
-      <span style="background-color: #FF4500; color: white;">Microservices</span> | 
-      <span style="background-color: #1E90FF; color: white;">Serverless</span> | 
-      <span style="background-color: #FFD700; color: white;">GitOps</span> | 
-      <span style="background-color: #FF1493; color: white;">Observability</span> | 
-      <span style="background-color: #8A2BE2; color: white;">Immutable Infrastructure</span> | 
-      <span style="background-color: #228B22; color: white;">Self-Healing Systems</span>
+      <span style="background-color: #5E6A8B; color: white;">Microservices</span> | 
+      <span style="background-color: #3B4C56; color: white;">Serverless</span> | 
+      <span style="background-color: #5E6A8B; color: white;">GitOps</span> | 
+      <span style="background-color: #4B5677; color: white;">Observability</span> | 
+      <span style="background-color: #3B4C56; color: white;">Immutable Infrastructure</span> | 
+      <span style="background-color: #5E6A8B; color: white;">Self-Healing Systems</span>
     </p>
   </div>
 
   <!-- Cloud Journey Section -->
   <div class="section-card">
-    <h3 style="color: #1E90FF;">📅 Cloud Journey:</h3>
-    <ul style="list-style-type: none; color: #FF69B4;">
+    <h3 style="color: #5E6A8B;">📅 Cloud Journey:</h3>
+    <ul style="list-style-type: none; color: #A6B1C3;">
       <li>🚀 <strong>2018:</strong> Started exploring AWS and earned my first certification.</li>
       <li>🛠️ <strong>2019:</strong> Built my first Kubernetes cluster for a client project.</li>
       <li>🌩️ <strong>2020:</strong> Achieved Azure certification and migrated legacy apps to Azure Cloud.</li>
@@ -244,14 +261,15 @@
 
   <!-- Closing Section -->
   <div class="center">
-    <h3 style="color: #007FFF;">Let’s connect and collaborate! 🤝</h3>
-    <p style="font-size: 20px; color: #FF4500;">
+    <h3 style="color: #5E6A8B;">Let’s connect and collaborate! 🤝</h3>
+    <p style="font-size: 20px; color: #D1D1D1;">
       🏗️ Cloud Builder | 🎨 Infrastructure Artist | 🐳 Container Magician | 🚀 Scaling Enthusiast
     </p>
   </div>
 
+  <!-- Button to Open Link in a New Tab -->
   <div class="center">
-    <p><a href="https://github.com/user-attachments/assets/e3b7df6f-18e2-4097-9a91-a845ca5cfb33" class="link">[Alwayz podra danceuh 🕺💃]</a></p>
+    <a href="https://github.com/user-attachments/assets/e3b7df6f-18e2-4097-9a91-a845ca5cfb33" target="_blank" class="button">Check out the Dance Video 🕺💃</a>
   </div>
 
 </body>
